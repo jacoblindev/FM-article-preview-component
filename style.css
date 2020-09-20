@@ -19,6 +19,116 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+/* Main Area */
+main {
+    height: 90vh;
+}
+
+.card {
+    width: 50%;
+    height: 35%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-radius: 10px;
+    box-shadow: 0px 15px 60px -15px var(--Grayish-Blue);
+}
+
+.drawer {
+    width: 36%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    background-image: url(./images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article {
+    width: 64%;
+    height: 100%;
+    /* overflow: hidden; */
+    color: var(--Desaturated-Dark-Blue);
+    padding: 2em 3em;
+    position: relative;
+}
+
+article h2,
+article h3 {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+article p {
+    margin: 1.2em 0;
+}
+
+.pro-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1.2em;
+}
+
+.pro-name {
+    float: left;
+}
+
+.pro-name h4 {
+    font-weight: 500;
+}
+
+.profile button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    float: right;
+}
+
+/* Share Section */
+.share-btn {
+    display: none;
+    position: absolute;
+    right: -5em;
+    bottom: 6em;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 10px;
+    width: 20em;
+    height: 4em;
+    padding: 0 3em;
+    letter-spacing: 0.3em;
+    text-align: center;
+    line-height: 4em;
+    justify-content: space-around;
+}
+
+.share-btn::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    width: 25px;
+    height: 25px;
+    border-top: 15px solid var(--Very-Dark-Grayish-Blue);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.share-btn button {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border: none;
+    vertical-align: middle;
+
+}
+
 /* Footer Section */
 footer {
     background-color: #000;

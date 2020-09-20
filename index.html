@@ -8,24 +8,37 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Article preview component</title>
+  <title>FM | Article preview component</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  Shift the overall look and feel by adding these wonderful
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps
-  it felt slightly bare and uninviting. I’ve got some simple tips
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
+  <main>
+    <div class="card">
+      <div class="drawer"></div>
+      <article>
+        <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p> Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
+          got some simple tips to help you make any room feel complete.</p>
+        <div class="profile">
+          <div class="pro-avatar"><img src="./images/avatar-michelle.jpg" alt="Michelle's Profile Pic"></div>
+          <div class="pro-name">
+            <h3>Michelle Appleton</h3>
+            <h4>28 Jun 2020</h4>
+          </div>
+          <button id="share"><img src="./images/icon-share.svg" alt="share-icon"></button>
+        </div>
+        <div class="share-btn">
+          <span>SHARE</span>
+          <button><img src="./images/icon-facebook.svg" alt="facebook"></button>
+          <button><img src="./images/icon-pinterest.svg" alt="pinterest"></button>
+          <button><img src="./images/icon-twitter.svg" alt="twitter"></button>
+        </div>
+      </article>
+    </div>
+  </main>
 
   <footer>
     <p class="attribution">
@@ -33,6 +46,23 @@
       <a href="https://github.com/jacoblindev" target="_blank">Jacob Lin</a> 👊🏼2020
     </p>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var show = false;
+      $("#share").on("click",function(){
+        if (show) {
+          $(".share-btn").css("display", "none");
+          show = false;
+        } else {
+          $(".share-btn").css("display", "flex");
+          show = true;
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
