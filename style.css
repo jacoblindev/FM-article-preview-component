@@ -100,6 +100,10 @@ article h3 {
     fill: currentColor;
 }
 
+#share:focus {
+    outline: unset;
+}
+
 /* Share Section */
 .share-btn {
     display: none;
@@ -133,7 +137,10 @@ article h3 {
     background-color: var(--Very-Dark-Grayish-Blue);
     border: none;
     vertical-align: middle;
+}
 
+.share-btn span {
+    color: var(--Grayish-Blue);
 }
 
 /* Footer Section */
@@ -157,4 +164,87 @@ footer {
 
 /* Mobile Version */
 @media screen and (max-width: 375px) {
+    /* Main Area */
+    main {
+        height: 92vh;
+    }
+
+    .card {
+        width: 90%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drawer {
+        width: 100%;
+        height: 45%;
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+    }
+
+    article {
+        width: 100%;
+        height: 60%;
+        padding: 2em 2.5em 1em;
+    }
+
+    article h2 {
+        font-size: 1.25em;
+    }
+
+    article p {
+        font-size: 1.06em;
+        margin-bottom: 1em;
+    }
+
+    #share {
+        width: 35px;
+        height: 35px;
+        float: right;
+        position: relative;
+        z-index: 9;
+        margin-top: 0.2em;
+    }
+    
+    #share:focus {
+        outline: unset;
+        background-color: var(--Desaturated-Dark-Blue);
+        color: var(--Light-Grayish-Blue);
+        fill: currentColor;
+    }
+
+    /* Share Section */
+    .share-btn {
+        right: 0;
+        bottom: 0;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        height: 5em;
+        padding: 0 2.5em;
+        /* letter-spacing: 0.3em; */
+        /* text-align: center; */
+        line-height: 5em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .share-btn::after {
+        display: none;
+    }
+
+    .share-btn button {
+        margin: auto 1em;
+    }
+
+    /* Footer Section */
+    footer {
+        height: 8vh;
+    }
+
+    .attribution {
+        font-size: 12px;
+        line-height: 8vh;
+    }
 }
