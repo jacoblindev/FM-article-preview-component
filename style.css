@@ -53,7 +53,7 @@ main {
 article {
     width: 64%;
     color: var(--Desaturated-Dark-Blue);
-    padding: 2em;
+    padding: 2em 3.5em;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -83,8 +83,8 @@ article h3 {
 }
 
 #share {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: none;
     border-radius: 50%;
     background-color: var(--Light-Grayish-Blue);
@@ -108,8 +108,8 @@ article h3 {
 .share-btn {
     display: none;
     position: absolute;
-    right: -6.5em;
-    bottom: 6em;
+    right: -5.1em;
+    bottom: 6.2em;
     background-color: var(--Very-Dark-Grayish-Blue);
     border-radius: 10px;
     width: 20em;
