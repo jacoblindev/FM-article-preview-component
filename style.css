@@ -26,12 +26,14 @@ body {
 /* Main Area */
 main {
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     width: 50%;
     height: 35%;
-    margin: 0 auto;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -42,7 +44,6 @@ main {
 
 .drawer {
     width: 36%;
-    height: 100%;
     border-radius: 10px 0 0 10px;
     background-image: url(./images/drawers.jpg);
     background-repeat: no-repeat;
@@ -51,21 +52,18 @@ main {
 
 article {
     width: 64%;
-    height: 100%;
-    /* overflow: hidden; */
     color: var(--Desaturated-Dark-Blue);
-    padding: 2em 3em;
+    padding: 2em;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 article h2,
 article h3 {
     color: var(--Very-Dark-Grayish-Blue);
     font-weight: 700;
-}
-
-article p {
-    margin: 1.2em 0;
 }
 
 .pro-avatar img {
@@ -106,7 +104,7 @@ article p {
 .share-btn {
     display: none;
     position: absolute;
-    right: -5em;
+    right: -6.5em;
     bottom: 6em;
     background-color: var(--Very-Dark-Grayish-Blue);
     border-radius: 10px;
